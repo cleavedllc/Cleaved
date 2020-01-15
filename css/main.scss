@@ -1,0 +1,125 @@
+$primary-dark:#401c04;
+$primary-color:#eabc29;
+$accent-color:#37b35d;
+$primary-white:#fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+    font-family:  "Open Sans", Ubuntu, "Nimbus Sans L", Avenir, AvenirNext, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1rem;
+
+    span{
+        display: block;
+    }
+}
+.navbar{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.4;
+}
+header{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/DSC07380.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    .content{
+        color: $primary-white;
+        text-align: center;
+        max-width: 80%;
+        h1{
+            .header--main{
+                
+                font-size: 6rem;
+                font-weight: 300;
+            }
+            .header--sub{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+        em{
+            display: block;
+        }
+    }
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    background-color: $accent-color;
+    color: $primary-white;
+    padding :8px 16px;
+    display: inline-block;
+    margin: 2rem 0;
+}
+.section-a, .section-b, .section-c{
+    text-align: center;
+    color: $primary-dark;
+    h2{
+        margin: 4rem 0;
+        
+    }
+    p{
+        padding: 0 8rem;
+        margin-bottom: 4rem;
+    }
+}
+.section--image{
+    height: 30vh;
+    background-image: url("../img/DSC07345.jpg");
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
+    display: flex;
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 12rem;
+    color: $primary-dark;
+    background-color: $primary-color;
+    ul{
+        margin-top: 4rem;
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        li{
+            
+            display: inline-block;
+            padding: 2rem;
+        }
+
+    }
+    p{
+        padding: 4rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}
